@@ -1,8 +1,4 @@
 #!/bin/bash
-
-pip install pynvim
-npm i -g neovim
-
 # try various methods, in order of preference, to detect distro
 # store result in variable '$distro'
 if type lsb_release >/dev/null 2>&1 ; then
@@ -18,14 +14,15 @@ distro=$(printf '%s\n' "$distro" | LC_ALL=C tr '[:upper:]' '[:lower:]')
 
 # now do different things depending on distro
 case "$distro" in
-   debian*)  echo 'soy debian' ;;
-   centos*)  echo 'soy centos';;
-   ubuntu*)  echo 'soy ubuntu';;
-   mint*)    echo 'soy mint';;
+   debian*)  echo 'soy debian pero aun no me configuran' ;;
+   centos*)  echo 'soy centos pero aun no me configuran';;
+   ubuntu*)  echo 'soy ubuntu pero aun no me configuran';;
+   mint*)    echo 'soy mint pero aun no me configuran';;
    fedora*) 
-      echo 'soy fedora'
-      sudo dnf install cmake automake libtool 
-
+      echo 'soy fedora y la configuracion esta incompleta,pero algo es algo'
+      sudo dnf install -y cmake automake libtool 
+      pip install pynvim
+      npm i -g neovim
       ;;
    *)        echo "unknown distro: '$distro'" ; exit 1 ;;
 esac
