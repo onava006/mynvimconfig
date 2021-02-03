@@ -11,6 +11,7 @@ mkdir $HOME/.config/nvim
 git clone https://github.com/onava006/mynvimconfig
 cd mynvimconfig/nvimconfig && mv * $HOME/.config/nvim/
 
+
 #install and compile neovim 
 cd ~
 sudo rm -r neovim
@@ -29,3 +30,6 @@ git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
 cd ..rm -rf fonts
+
+cd ..
+cd ..rm -rf mynvimconfig 

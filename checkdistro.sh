@@ -17,10 +17,9 @@ case "$distro" in
    debian*)  echo 'soy debian pero aun no me configuran' ;;
    centos*)  echo 'soy centos pero aun no me configuran';;
    ubuntu*)  echo 'soy ubuntu pero aun no me configuran';;
-   mint*)    echo 'soy mint pero aun no me configuran';;
    fedora*) 
-      echo 'soy fedora y la configuracion esta incompleta,pero algo es algo'
-      sudo dnf install -y cmake automake libtool 
+      echo 'soy fedora y la configuracion esta incompleta, pero algo es algo'
+      sudo dnf install -y cmake automake libtool gcc
       pip install pynvim
       npm i -g neovim
       ;;
