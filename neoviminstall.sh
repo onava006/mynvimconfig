@@ -9,7 +9,7 @@
 #create folder and clone
 mkdir $HOME/.config/nvim
 git clone https://github.com/onava006/mynvimconfig
-cd mynvimconfig && mv nvimconfig $HOME/.config/nvim/
+cd mynvimconfig/nvimconfig && mv * $HOME/.config/nvim/
 
 #install and compile neovim 
 cd ~

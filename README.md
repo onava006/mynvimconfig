@@ -5,24 +5,24 @@ El script de instalacion esta incompleto, porque no me acuerdo de todos los paso
 
 Actualmente, el script solo tiene la configuracion para ser ejecutado en un Fedora, pero tiene la posibilidad de ser extendida. Si vuelvo a Debian 
 
-#Installation 
+# Installation 
 
 ejecutar sin sudo, ya que se instalaran dependencias por pip, y estas no deben tener permisos de administrador, por lo que la contrasena solo se ingresa cuando es requerido
 
-bash'''
+bash```
 chmod a+x neoviminstall.sh
 ./neoviminstall.sh
-'''
+```
 
-#Post Installation
+# Post Installation
 luego de la instalacion, abrir neovim y ejecutar 
 
-bash'''
+bash```
 nvim
 :PlugStatus
 :PlugInstall
 :checkhealth
-'''
+```
 
 
 
