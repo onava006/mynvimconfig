@@ -31,5 +31,5 @@ cd fonts
 ./install.sh
 cd ..rm -rf fonts
 
-cd ..
+d ..
 cd ..rm -rf mynvimconfig 
